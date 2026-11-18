@@ -2,272 +2,260 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AGE ARQUITECTOS — Portafolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0c">
+<title>AGE Arquitectos — Arquitectura que transforma</title>
 <meta name="description" content="AGE Arquitectos — Diseño arquitectónico, ejecución de obra y diseño de interiores en Chiclayo y Cajamarca, Perú.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- NAV -->
-<nav id="mainNav">
-  <a href="#" class="logo" aria-label="AGE Arquitectos — inicio">
-    <!-- Para usar tu logo: guarda el archivo como /logo.png y reemplaza las dos líneas siguientes por <img src="/logo.png" alt="AGE Arquitectos"> -->
-    <span class="logo-mark">AGE</span>
-    <span class="logo-sub">Arquitectos</span>
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo" aria-label="AGE Arquitectos — inicio">
+    <!-- Logo: pon public/logo.png y cambia estas dos líneas por <img src="/logo.png" alt="AGE Arquitectos"> -->
+    <span class="logo-mark">AGE</span><span class="logo-sub">Arquitectos</span>
   </a>
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#explora">3D</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#equipo">Equipo</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
+  <nav class="nav-links" id="navLinks" aria-label="Principal">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#contacto" class="nav-cta-mobile">Contacto</a>
+  </nav>
+  <a href="#contacto" class="btn btn-grad btn-sm nav-cta">Cotiza tu proyecto</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Chiclayo · Cajamarca · Perú — Est. 2024</p>
-    <h1 class="hero-title">
-      Arquitectura<br>
-      <em>que transforma</em>
-    </h1>
-    <p class="hero-subtitle">Diseño arquitectónico, construcción y diseño de interiores con visión integral.</p>
-    <a href="#proyectos" class="hero-cta">Ver proyectos</a>
+<section class="hero" id="inicio">
+  <div class="hero-canvas" id="hero3d" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span class="dot"></span>Chiclayo · Cajamarca · Perú — Est. 2024</p>
+    <h1 class="hero-title">Arquitectura <span class="grad-text serif-it">que transforma</span></h1>
+    <p class="hero-sub">Diseño arquitectónico, construcción y diseño de interiores con visión integral. Del primer trazo a la entrega de llaves.</p>
+    <div class="hero-actions">
+      <a href="#proyectos" class="btn btn-grad">Ver proyectos</a>
+      <a href="https://wa.me/51990757996?text=Hola%20AGE%20Arquitectos%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto" class="btn btn-ghost" target="_blank" rel="noopener">Escríbenos</a>
+    </div>
+    <ul class="hero-chips">
+      <li><strong>13+</strong> proyectos</li>
+      <li><strong>02</strong> ciudades</li>
+      <li><strong>3D</strong> en cada propuesta</li>
+    </ul>
   </div>
-  <div class="hero-right">
-    <div id="hero3d" aria-label="Modelo 3D de edificio"></div>
-    <div class="hero-right-overlay"></div>
-    <p class="hero-3d-hint">Arrastra para girar</p>
-  </div>
+  <a href="#nosotros" class="scroll-cue" aria-label="Bajar"><span></span></a>
 </section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Diseño arquitectónico</span><i>✦</i><span>Ejecución de obra</span><i>✦</i><span>Diseño de interiores</span><i>✦</i><span>Visualización 3D</span><i>✦</i><span>Modelado BIM</span><i>✦</i><span>Chiclayo</span><i>✦</i><span>Cajamarca</span><i>✦</i>
+    <span>Diseño arquitectónico</span><i>✦</i><span>Ejecución de obra</span><i>✦</i><span>Diseño de interiores</span><i>✦</i><span>Visualización 3D</span><i>✦</i><span>Modelado BIM</span><i>✦</i><span>Chiclayo</span><i>✦</i><span>Cajamarca</span><i>✦</i>
+  </div>
+</div>
 
 <!-- NOSOTROS -->
-<div class="divider reveal" id="nosotros">
-  <div class="divider-line"></div>
-  <span class="divider-text">Nosotros</span>
-  <div class="divider-line"></div>
-</div>
+<section class="section about" id="nosotros">
+  <div class="blob blob-a" aria-hidden="true"></div>
+  <div class="section-head reveal">
+    <p class="eyebrow">01 — Nosotros</p>
+    <h2 class="h2">Espacios con <span class="grad-text serif-it">identidad</span></h2>
+  </div>
+  <div class="about-grid">
+    <p class="about-lead reveal">
+      En AGE ARQUITECTOS nos especializamos en diseño arquitectónico, construcción y diseño de interiores, abordando cada proyecto con una visión integral y multidisciplinaria. Cada etapa está cuidadosamente planificada y ejecutada.
+    </p>
+    <article class="glass-card mission reveal">
+      <p class="eyebrow">Misión</p>
+      <p>Crear espacios que no solo cumplan con las necesidades funcionales de nuestros clientes, sino que también <strong>reflejen su identidad</strong> y mejoren su calidad de vida. Creemos en la arquitectura como herramienta para transformar entornos y conectar personas.</p>
+    </article>
+  </div>
 
-<section class="intro reveal">
-  <p class="intro-label">Filosofía</p>
-  <p class="intro-text">
-    En AGE ARQUITECTOS nos especializamos en <em>diseño arquitectónico</em>, construcción y diseño de interiores, abordando cada proyecto con una visión integral y multidisciplinaria. Cada etapa está cuidadosamente planificada y ejecutada.
-  </p>
+  <div class="stats reveal">
+    <div class="stat"><span class="stat-n" data-count="2024" data-plain>2024</span><span class="stat-l">Año de fundación</span></div>
+    <div class="stat"><span class="stat-n"><span data-count="13">13</span>+</span><span class="stat-l">Proyectos realizados</span></div>
+    <div class="stat"><span class="stat-n"><span data-count="3" data-pad>03</span></span><span class="stat-l">Servicios especializados</span></div>
+    <div class="stat"><span class="stat-n"><span data-count="2" data-pad>02</span></span><span class="stat-l">Ciudades principales</span></div>
+  </div>
 </section>
 
-<section class="intro reveal">
-  <p class="intro-label">Misión</p>
-  <p class="intro-text small">
-    Crear espacios que no solo cumplan con las necesidades funcionales de nuestros clientes, sino que también <em>reflejen su identidad</em> y mejoren su calidad de vida. Creemos en la arquitectura como herramienta para transformar entornos y conectar personas.
-  </p>
-</section>
-
-<!-- STATS -->
-<div class="stats reveal">
-  <div class="stat-item">
-    <div class="stat-number">2024</div>
-    <div class="stat-label">Año de fundación</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number"><span data-count="13">13</span><sup>+</sup></div>
-    <div class="stat-label">Proyectos completados</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">03</div>
-    <div class="stat-label">Servicios especializados</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">02</div>
-    <div class="stat-label">Ciudades principales</div>
-  </div>
-</div>
-
-<!-- 3D EXPLORER -->
-<section class="explore-section" id="explora">
-  <div class="section-header reveal">
-    <h2 class="section-title">Explora el <em>proyecto</em></h2>
-    <span class="section-note">Modelo paramétrico · Three.js</span>
-  </div>
-  <div class="viewer reveal">
-    <div id="viewer3d" aria-label="Visor 3D interactivo"></div>
-    <div class="viewer-ui" id="viewerUi">
-      <button class="viewer-ui-toggle" id="uiToggle" type="button">Controles</button>
-      <div class="t">Edificio · 3D</div>
-      <div class="viewer-ui-body">
-        <label for="niveles">Niveles <span id="vN">5</span></label>
-        <input id="niveles" type="range" min="1" max="20" value="5">
-        <label for="h">Entrepiso (m) <span id="vH">3.0</span></label>
-        <input id="h" type="range" min="2.6" max="4.5" step="0.1" value="3">
-        <label for="ejesX">Ejes X (m)</label>
-        <input id="ejesX" type="text" value="0,5.7,11.4,17.1" inputmode="decimal">
-        <label for="ejesY">Ejes Y (m)</label>
-        <input id="ejesY" type="text" value="0,5,10" inputmode="decimal">
-        <label for="explode">Separar niveles <span id="vE">0.0</span></label>
-        <input id="explode" type="range" min="0" max="3" step="0.1" value="0">
-        <label for="corte">Corte horizontal <span id="vC">100%</span></label>
-        <input id="corte" type="range" min="0.05" max="1" step="0.01" value="1">
-        <div class="row">
-          <button id="bModo" type="button">Estructura</button>
-          <button id="bRot" type="button">Rotar</button>
-          <button id="bPng" type="button">PNG</button>
-        </div>
-      </div>
+<!-- PROCESO 3D (scroll) -->
+<section class="process" id="proceso">
+  <div class="process-sticky">
+    <div class="process-canvas" id="process3d" aria-hidden="true"></div>
+    <div class="process-shade" aria-hidden="true"></div>
+    <div class="process-copy">
+      <p class="eyebrow">02 — Proceso</p>
+      <h2 class="h2">Del plano <span class="grad-text serif-it">a la obra</span></h2>
+      <p class="process-hint">Sigue bajando y mira cómo se construye.</p>
+      <ol class="steps" id="steps">
+        <li class="step is-active"><span class="step-n">01</span><div><h3>Concepto</h3><p>Escuchamos tu idea y la convertimos en volumen, luz y recorrido.</p></div></li>
+        <li class="step"><span class="step-n">02</span><div><h3>Estructura</h3><p>Planos de ejecución y modelo BIM coordinado.</p></div></li>
+        <li class="step"><span class="step-n">03</span><div><h3>Envolvente</h3><p>Fachadas, vanos y materiales que definen el carácter.</p></div></li>
+        <li class="step"><span class="step-n">04</span><div><h3>Interiores</h3><p>Mobiliario, iluminación y acabados hasta la entrega.</p></div></li>
+      </ol>
+      <div class="progress"><span id="processBar"></span></div>
     </div>
-    <p class="viewer-hint">Arrastra para girar · clic y rueda para zoom</p>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="projects-section" id="proyectos">
-  <div class="section-header reveal">
-    <h2 class="section-title">Proyectos seleccionados</h2>
-  </div>
-  <div class="filter-tabs reveal">
-    <button class="filter-tab active" data-filter="all">Todos</button>
-    <button class="filter-tab" data-filter="residencial">Residencial</button>
-    <button class="filter-tab" data-filter="comercial">Comercial</button>
+<!-- PROYECTOS -->
+<section class="section projects" id="proyectos">
+  <div class="blob blob-b" aria-hidden="true"></div>
+  <div class="section-head row reveal">
+    <div>
+      <p class="eyebrow">03 — Proyectos</p>
+      <h2 class="h2">Proyectos <span class="grad-text serif-it">seleccionados</span></h2>
+    </div>
+    <div class="filters" role="tablist" aria-label="Filtrar proyectos">
+      <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      <button class="chip" data-filter="residencial" role="tab" aria-selected="false">Residencial</button>
+      <button class="chip" data-filter="comercial" role="tab" aria-selected="false">Comercial</button>
+    </div>
   </div>
   <div class="projects-grid" id="projectsGrid"></div>
 </section>
 
-<!-- SERVICES -->
-<section class="services-section" id="servicios">
-  <h2 class="section-title reveal">Nuestros servicios</h2>
-  <div class="services-grid">
-    <div class="service-item reveal">
-      <span class="service-num">01</span>
-      <h3 class="service-name">Diseño Arquitectónico</h3>
-      <p class="service-desc">Conceptualización y desarrollo de proyectos con una visión integral. Desde el anteproyecto hasta los planos de ejecución, con atención al detalle y la funcionalidad.</p>
-    </div>
-    <div class="service-item reveal">
-      <span class="service-num">02</span>
-      <h3 class="service-name">Ejecución de Proyectos</h3>
-      <p class="service-desc">Supervisión y gestión de obra para garantizar que cada proyecto se materialice con la calidad, los plazos y los estándares que nuestros clientes merecen.</p>
-    </div>
-    <div class="service-item reveal">
-      <span class="service-num">03</span>
-      <h3 class="service-name">Diseño de Interiores</h3>
-      <p class="service-desc">Creación de espacios interiores que reflejan la identidad del cliente. Selección de materiales, mobiliario, iluminación y acabados para ambientes únicos y coherentes.</p>
-    </div>
+<!-- SERVICIOS -->
+<section class="section services" id="servicios">
+  <div class="section-head reveal">
+    <p class="eyebrow">04 — Servicios</p>
+    <h2 class="h2">Lo que <span class="grad-text serif-it">hacemos</span></h2>
+  </div>
+  <div class="services-grid snap-row">
+    <article class="service-card tilt reveal">
+      <div class="service-art"><canvas data-scene="design" aria-hidden="true"></canvas></div>
+      <span class="service-n">01</span>
+      <h3>Diseño arquitectónico</h3>
+      <p>Conceptualización y desarrollo de proyectos con visión integral. Del anteproyecto a los planos de ejecución, con atención al detalle y la funcionalidad.</p>
+    </article>
+    <article class="service-card tilt reveal">
+      <div class="service-art"><canvas data-scene="build" aria-hidden="true"></canvas></div>
+      <span class="service-n">02</span>
+      <h3>Ejecución de proyectos</h3>
+      <p>Supervisión y gestión de obra para que cada proyecto se materialice con la calidad, los plazos y los estándares que mereces.</p>
+    </article>
+    <article class="service-card tilt reveal">
+      <div class="service-art"><canvas data-scene="interior" aria-hidden="true"></canvas></div>
+      <span class="service-n">03</span>
+      <h3>Diseño de interiores</h3>
+      <p>Espacios interiores que reflejan tu identidad: materiales, mobiliario, iluminación y acabados para ambientes únicos y coherentes.</p>
+    </article>
   </div>
 </section>
 
-<!-- TEAM -->
-<section class="team-section" id="equipo">
-  <div class="section-header reveal">
-    <h2 class="section-title">Nuestro equipo</h2>
+<!-- EQUIPO -->
+<section class="section team" id="equipo">
+  <div class="section-head reveal">
+    <p class="eyebrow">05 — Equipo</p>
+    <h2 class="h2">Quiénes <span class="grad-text serif-it">diseñan</span></h2>
   </div>
-  <div class="team-grid">
-    <div class="team-card reveal">
-      <div class="team-initials">AB</div>
-      <h3 class="team-name">Addi Buendía</h3>
-      <p class="team-role">Arquitecto y Visualizador 3D<br>Jefe de Ejecución de Obra</p>
-    </div>
-    <div class="team-card reveal">
-      <div class="team-initials">JQ</div>
-      <h3 class="team-name">Jocelyne Quijano</h3>
-      <p class="team-role">Arquitecta e Interiorista<br>Administradora de Obra</p>
-    </div>
-    <div class="team-card reveal">
-      <div class="team-initials">DP</div>
-      <h3 class="team-name">Diego Paz</h3>
-      <p class="team-role">Arquitecto y Artista<br>Modelador BIM · Jefe de Proyectos</p>
-    </div>
+  <div class="team-grid snap-row">
+    <article class="team-card reveal">
+      <div class="avatar">AB</div>
+      <h3>Addi Buendía</h3>
+      <p>Arquitecto y Visualizador 3D<br>Jefe de Ejecución de Obra</p>
+    </article>
+    <article class="team-card reveal">
+      <div class="avatar">JQ</div>
+      <h3>Jocelyne Quijano</h3>
+      <p>Arquitecta e Interiorista<br>Administradora de Obra</p>
+    </article>
+    <article class="team-card reveal">
+      <div class="avatar">DP</div>
+      <h3>Diego Paz</h3>
+      <p>Arquitecto y Artista<br>Modelador BIM · Jefe de Proyectos</p>
+    </article>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contacto">
-  <div>
-    <h2 class="contact-title reveal">Hablemos de tu <em>proyecto</em></h2>
-    <p class="contact-subtitle reveal">Estamos en Chiclayo y Cajamarca, listos para escucharte y convertir tu visión en realidad.</p>
-    <div class="contact-info reveal">
-      <div class="contact-info-item">
-        <span class="contact-info-label">Email</span>
-        <span class="contact-info-value"><a href="mailto:age.arquitec@gmail.com">age.arquitec@gmail.com</a></span>
-      </div>
-      <div class="contact-info-item">
-        <span class="contact-info-label">Celular</span>
-        <span class="contact-info-value">
-          <a href="https://wa.me/51990757996" target="_blank" rel="noopener">990 757 996</a><br>
-          <a href="https://wa.me/51938952975" target="_blank" rel="noopener">938 952 975</a><br>
-          <a href="https://wa.me/51984381693" target="_blank" rel="noopener">984 381 693</a>
-        </span>
-      </div>
-      <div class="contact-info-item">
-        <span class="contact-info-label">Redes</span>
-        <span class="contact-info-value">
-          IG: @age.arquitectos<br>
-          FB: AGE Arquitectos<br>
-          TikTok: @age.arquitectos
-        </span>
-      </div>
-    </div>
+<!-- CTA -->
+<section class="cta-band reveal">
+  <div class="cta-inner">
+    <h2 class="h2">¿Tienes un proyecto <span class="serif-it">en mente?</span></h2>
+    <p>Cuéntanos tu idea y te enviamos una propuesta con visualización 3D.</p>
+    <a href="https://wa.me/51990757996?text=Hola%20AGE%20Arquitectos%2C%20tengo%20un%20proyecto" class="btn btn-dark" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
   </div>
-  <div class="reveal">
-    <form class="contact-form" id="contactForm">
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label" for="fNombre">Nombre</label>
-          <input class="form-input" id="fNombre" type="text" placeholder="Tu nombre" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="fEmail">Email</label>
-          <input class="form-input" id="fEmail" type="email" placeholder="tu@email.com" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="fTipo">Tipo de proyecto</label>
-        <select class="form-select" id="fTipo">
+</section>
+
+<!-- CONTACTO -->
+<section class="section contact" id="contacto">
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">06 — Contacto</p>
+      <h2 class="h2">Hablemos de tu <span class="grad-text serif-it">proyecto</span></h2>
+      <p class="muted">Estamos en Chiclayo y Cajamarca, listos para escucharte y convertir tu visión en realidad.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:age.arquitec@gmail.com">age.arquitec@gmail.com</a></li>
+        <li><span>WhatsApp</span>
+          <div class="phones">
+            <a href="https://wa.me/51990757996" target="_blank" rel="noopener">990 757 996</a>
+            <a href="https://wa.me/51938952975" target="_blank" rel="noopener">938 952 975</a>
+            <a href="https://wa.me/51984381693" target="_blank" rel="noopener">984 381 693</a>
+          </div>
+        </li>
+        <li><span>Redes</span>
+          <div class="phones">
+            <a href="https://www.instagram.com/age.arquitectos" target="_blank" rel="noopener">Instagram @age.arquitectos</a>
+            <a href="https://www.tiktok.com/@age.arquitectos" target="_blank" rel="noopener">TikTok @age.arquitectos</a>
+            <span>Facebook: AGE Arquitectos</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="glass-card form reveal" id="contactForm">
+      <div class="field"><label for="fNombre">Nombre</label><input id="fNombre" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
+      <div class="field"><label for="fEmail">Email</label><input id="fEmail" type="email" placeholder="tu@email.com" autocomplete="email" required></div>
+      <div class="field"><label for="fTipo">Tipo de proyecto</label>
+        <select id="fTipo">
           <option value="">Selecciona una categoría</option>
-          <option>Residencial</option>
-          <option>Comercial</option>
-          <option>Diseño de Interiores</option>
-          <option>Restaurante / Bar</option>
-          <option>Otro</option>
+          <option>Residencial</option><option>Comercial</option><option>Diseño de interiores</option><option>Restaurante / Bar</option><option>Otro</option>
         </select>
       </div>
-      <div class="form-group">
-        <label class="form-label" for="fMsg">Mensaje</label>
-        <textarea class="form-textarea" id="fMsg" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-      </div>
-      <button class="form-btn" type="submit">Enviar consulta</button>
+      <div class="field"><label for="fMsg">Mensaje</label><textarea id="fMsg" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea></div>
+      <button class="btn btn-grad btn-block" type="submit">Enviar consulta</button>
+      <p class="form-note">Se abrirá tu correo con el mensaje listo para enviar.</p>
     </form>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <a href="#" class="logo" aria-label="AGE Arquitectos">
-    <span class="logo-mark">AGE</span>
-    <span class="logo-sub">Arquitectos</span>
-  </a>
-  <p class="footer-copy">&copy; <span id="year">2025</span> AGE Arquitectos. Todos los derechos reservados.</p>
-  <ul class="footer-links">
-    <li><a href="https://www.instagram.com/age.arquitectos" target="_blank" rel="noopener">Instagram</a></li>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="https://www.tiktok.com/@age.arquitectos" target="_blank" rel="noopener">TikTok</a></li>
-  </ul>
+</main>
+
+<footer class="footer">
+  <a href="#inicio" class="logo"><span class="logo-mark">AGE</span><span class="logo-sub">Arquitectos</span></a>
+  <p>&copy; <span id="year">2025</span> AGE Arquitectos · Chiclayo · Cajamarca</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/age.arquitectos" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@age.arquitectos" target="_blank" rel="noopener">TikTok</a>
+  </div>
 </footer>
 
+<!-- WhatsApp flotante -->
+<a class="fab" href="https://wa.me/51990757996" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
-  <div class="lightbox-inner">
-    <button class="lightbox-close" id="lbClose" aria-label="Cerrar">&#x2715;</button>
-    <div class="lightbox-ph">
-      <div class="proj-ph-text">
-        Imagen del proyecto
-        <small>Sube tu foto aquí</small>
-      </div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+  <div class="lightbox-card">
+    <button class="lightbox-close" id="lbClose" aria-label="Cerrar">✕</button>
+    <div class="lightbox-media"><canvas id="lbCanvas" aria-hidden="true"></canvas><img id="lbImg" alt="" hidden></div>
+    <div class="lightbox-info">
+      <p class="eyebrow" id="lbTag"></p>
+      <h3 id="lbTitle"></h3>
+      <p class="muted" id="lbLoc"></p>
+      <p class="lightbox-note">Maqueta 3D de referencia. Pronto: galería de fotos del proyecto.</p>
     </div>
-    <p class="lightbox-tag" id="lbTag"></p>
-    <p class="lightbox-caption" id="lbCaption"></p>
-    <p class="lightbox-loc" id="lbLoc"></p>
   </div>
 </div>
 

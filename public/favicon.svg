@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6d3a1"/>
+      <stop offset=".5" stop-color="#ec9b6c"/>
+      <stop offset="1" stop-color="#b38cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
+  <!-- "A" que también es un techo a dos aguas con su viga -->
+  <path d="M12 50 L32 14 L52 50" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 38 H43" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+</svg>
