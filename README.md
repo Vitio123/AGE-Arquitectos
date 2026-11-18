@@ -1,16 +1,26 @@
 # AGE Arquitectos — Web
 
-Portafolio de AGE Arquitectos (Chiclayo · Cajamarca, Perú) con visor 3D en Three.js.
+Portafolio de AGE Arquitectos (Chiclayo · Cajamarca, Perú) con edificio 3D en Three.js. Proyecto Vite.
 
-## Ver en local
-Abre `index.html` con Live Server (VS Code) o:
-
+## Comandos
 ```bash
-python3 -m http.server 8000
+npm install      # instala dependencias
+npm run dev      # servidor local con recarga (http://localhost:5173)
+npm run build    # genera dist/ para producción
 ```
-y entra a http://localhost:8000
+
+## Vercel
+Importa el repo en Vercel: detecta Vite solo (build `npm run build`, salida `dist`). Cada push a `main` redepliega.
+
+## Estructura
+- `index.html` — contenido de la página
+- `src/style.css` — estilos
+- `src/ui.js` — proyectos, menú, filtros, lightbox, formulario
+- `src/viewer.js` — edificio paramétrico Three.js
+- `src/main.js` — arranque
+- `public/` — imágenes (logo, fotos)
 
 ## Personalizar
-- **Logo:** guarda tu logo en `assets/logo.png` y reemplaza el bloque `logo-mark` en el `<nav>` por `<img src="assets/logo.png" alt="AGE Arquitectos">`.
-- **Fotos de proyectos:** en el arreglo `PROYECTOS` (dentro de `index.html`) agrega `img: 'assets/nombre.jpg'` a cada proyecto.
-- **Edificio 3D:** los parámetros (niveles, ejes, secciones) están en `createBuildingViewer(...)` al final del archivo.
+- **Logo:** pon `public/logo.png` y reemplaza el bloque `logo-mark` del `<nav>` por `<img src="/logo.png" alt="AGE Arquitectos">`.
+- **Fotos:** en `PROYECTOS` (`src/ui.js`) agrega `img: '/casa-zc.jpg'` y deja el archivo en `public/`.
+- **Edificio 3D:** parámetros en `src/main.js` (`createBuildingViewer(...)`).
